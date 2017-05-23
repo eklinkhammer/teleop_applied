@@ -7,7 +7,7 @@ set (CMAKE_CXX_STANDARD 11)
 set (CMAKE_CXX_FLAGS "-g -Wall")
 set (CMAKE_MACOSX_RPATH 1)
 
-set (EXEC execTeleop)
+set (EXEC debugTeleop)
 set (LIB_NAME libTeleop)
 set (TEST_EXEC testTeleop)
 set (CLIENT_EXEC execClient)
