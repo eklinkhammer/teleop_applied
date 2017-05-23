@@ -65,7 +65,7 @@ void session(tcp::socket sock)
       ia >> t;
 
       std::cout << "R: " << t.vel_r << " L: " << t.vel_l << " E: " << t.elev_step << std::endl;
-      // d.process_command(t);
+      d.process_command(t);
     }
   }
   catch (std::exception& e)
