@@ -40,6 +40,7 @@ Teleop_Command* Input_To_Command::getCommand() {
     vel_l = 0;
     if (elevator_switch_ == 1) {
       elev_step = elevator_dir_;
+      elevator_switch_ = 0;
     } else {
       elev_step = elevator_dir_ * 2;
     }
@@ -68,7 +69,6 @@ Teleop_Command* Input_To_Command::getCommand() {
 }
 
 void Input_To_Command::acceptChar(char input) {
-  elevator_switch_ = 0;
   ready_ = false;
   switch (input) {
   case 'W':
@@ -124,7 +124,6 @@ void Input_To_Command::acceptChar(char input) {
     elevator_switch_ = 1;
     elevator_on_ = 1;
     vel_ = 0;
-    ready_ = true;
     break;
   default:
     break;
