@@ -18,9 +18,9 @@ set (SOURCE src/teleop_main.cpp)
 
 set (LIB_SOURCE	src/input_to_command.cpp
     		src/driver.cpp)
-set (SERVER_SOURCE src/blocking_tcp_echo_server.cpp
+set (SERVER_SOURCE src/teleop_server.cpp
     		   src/driver.cpp)
-set (CLIENT_SOURCE src/blocking_tcp_echo_client.cpp
+set (CLIENT_SOURCE src/teleop_client.cpp
     		   src/input_to_command.cpp)
 set (TEST_SOURCE test/teleop_command_test.cpp
     		 test/driver_test.cpp
